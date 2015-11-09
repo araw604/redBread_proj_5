@@ -1,0 +1,639 @@
+/*!
+Theme Name: RED Starter Theme
+Theme URI: http://underscores.me/
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Embedded Fonts
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Media
+	## Captions
+	## Galleries
+# Page Templates
+	## Front page
+--------------------------------------------------------------*/
+
+// Imported but not included in the stylesheet.
+
+@import "variables";
+@import "mixins";
+
+// CSS included in style.css.
+
+@import "normalize";
+@import "fonts";
+@import "typography";
+@import "elements";
+@import "forms";
+@import "navigation";
+@import "modules";
+@import "widgets";
+@import "content";
+@import "media";
+@import "page-templates";
+
+//about page
+.entry-title{
+    color: #222;
+    font-family: 'open_sans';
+    font-size: 18px;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+.motto {
+	text-align: center;
+	box-sizing: border-box;
+	color: rgb(34, 34, 34);
+	display: block;
+	font-family: 'open_sans', sans-serif;
+	font-size: 16px;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 48px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+//decorate dot in about page...Soo much code :O
+hr.decorative {
+    border: none;
+    color: #e1e1e1;
+    margin-bottom: 3rem;
+    max-width: 320px;
+    padding: 0;
+    width: 50%;
+}
+
+.gallery-item, .hero, .latest-news h2, .page-template-about .entry-content h2, .page-template-about .entry-header, .post-type-archive-product .page-header, .site-info, .testimonials h2, .wp-caption-text, hr.decorative {
+    text-align: center;
+}
+
+
+
+hr, img, legend {
+    border: 0;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+user agent stylesheethr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+body, button, input, select, textarea {
+    color: #222;
+    font-family: "Open Sans Web",sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+hr.decorative:after {
+    background: 0 0;
+    content: '\f111';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 14.4px;
+    font-size: .9rem;
+    position: relative;
+    top: -.875em;
+}
+
+.container11{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.left-side, .right-side{
+width:45%;
+
+}
+
+
+.call-to-action{
+background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+.btn {
+    border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+}
+
+
+//blog page 
+
+.blog-page-container{
+
+	display: flex;
+	
+	width: 1024px;
+	margin: 0 auto;
+
+}
+
+
+.blog-page-stuff {
+	width: 69%;
+    
+    border-right: 1px solid #e1e1e1;
+	
+}
+
+.sidebar-div{
+	width:25%;
+	padding-left: 15px;
+}
+.entry-title{
+    text-align: left;
+}
+.entry-title a {
+    color: #db272a;
+    text-decoration: none;
+    font-size: 1.4rem;
+    
+}
+
+.entry-content p a{
+    color: #db272a;
+    text-decoration: none;
+}
+
+
+//individual taxonomy pages
+
+.single-product{
+    width: 100%;
+    display: flex;
+}
+
+.individual-products h3{
+    color: red;
+    margin-top: 0px;
+
+}
+
+.individual-products{
+    width: 70%;
+}
+
+.product-sidebar{
+    width: 30%;
+}
+
+.products-align{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed #d2d2d2;
+    border-top: 1px dashed #d2d2d2;
+}
+
+.product-img{
+    width: 25%;
+
+}
+
+.product-description{
+    width: 65%;
+    margin-right: 30px;
+}
+.product-description a {
+    text-decoration: none; 
+}
+
+
+//products page 
+
+.main-products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-price{
+    width: 25%;
+    border: 1px solid #e1e1e1;
+}
+
+.title-money{
+    display: flex;
+  margin: 10px 5px;
+
+}
+
+.product-title{
+    width: 60%;
+
+
+}
+.entry-title {
+    font-size: 1rem;
+}
+
+.product-money{
+    width: 40%;
+
+}
+
+.main-producttype{
+     text-align: center;
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    text-decoration: none;
+}
+
+.individual-producttypes{
+    width: 25%;
+
+}
+
+.container-producttypes{
+    margin: 0 auto;
+    width: 100%;
+}
+
+//front page
+
+.front-top{
+    background-image: url("../../images/hero-bread.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 1024px;
+    height: 540px;
+    text-align: center;
+    
+    }
+
+    .front-tag{
+        display: flex;
+        justify-content: center;
+
+       padding-top: 160px;
+        // padding-bottom: 250px;
+        color: white;
+        font-size: 50px;
+        font-family: 'overlock';
+        
+            }
+
+    #head-menu {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #e1e1e1;
+        height: 48px;
+
+    }
+
+    .menus{
+        width: 1024px;
+
+         margin: 0 auto;
+    }
+
+    .main-navigation li{
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+
+    }
+
+.front-post{
+     display: flex;
+     width: 100%;
+     margin: 0 auto;
+     background-color: #fafafa;
+     border: 1px solid #e1e1e1;
+     padding: 1.5rem;
+     margin-bottom: 3rem;
+     margin-left: auto;
+     margin-right: auto;
+
+}
+
+.front-post li{
+    width: 25%;
+    list-style: none;
+    padding-top: 50px;
+  padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.front-product{
+    display: flex;
+    width: 100%;
+  margin-bottom: 50px;
+}
+
+
+.front-product li{
+    width: 25%;
+    list-style: none;
+    padding-top: 50px;
+  padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+
+}
+
+li p{
+    text-align: center;
+    
+}
+
+.iamtootired{
+    font-size: 1.3rem;
+    font-family: 'overlock';
+}
+
+.front-post li a{
+    text-decoration: none;
+}
+
+//a Hailmarry for latest news
+.front-product{
+    width:1024px;  
+    padding:2rem;
+}
+.latestnews{
+    border-bottom: 1px solid #e1e1e1 ;
+    border-top: 1px solid #e1e1e1 ;
+    padding: 3rem 0;
+    background-color: #fafafa ;
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-family: 'overlock';
+    }
+}
+
+.container{
+    background-color: #fafafa ;
+    border-bottom: 0px; 
+    border-top: 0px;
+}
+
+.decorative {
+   border: none;
+   color: #e1e1e1 ;
+   margin-bottom: 3rem;
+   max-width: 320px;
+   padding: 0;
+   width: 50%;
+   text-align: center;
+
+}
+   .decorative:after {
+   background: 0 0;
+   content: '\f111';
+   display: inline-block;
+   font-family: FontAwesome;
+   font-size: 14.4px;
+   font-size: .9rem;
+   position: relative;
+   top: -.875em;
+   }
+
+.post-page{
+    display: flex;
+    
+    justify-content: space-between;
+
+    li{
+    align-items: center;
+    list-style: none;
+    flex:1 0 25%;
+    width: 25%;
+    font-family: $font__main;
+    font-size:1rem;
+    color: #a1a1a1;
+    border: 1px solid #e1e1e1 ;
+    background-color: #fff;
+    line-height: 1.5;
+    border-top: 10px;
+    img{
+        height: 200px;
+        overflow: hidden;
+        width:100%;
+
+    }
+}
+}
+
+
+.post-info{
+    font-family: 'open_sans';
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 250px;
+    padding-left: 10px;
+    
+
+    a{
+        text-decoration: none;
+        color: grey;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        text-align: left;
+
+    }
+
+}
+
+.round-img{
+    width:100px;
+    height: 100px;
+}
+.testimonial-container {
+  display:flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box{
+  width: 49%;
+  
+  border-bottom: 1px dashed #d2d2d2;
+  border-right: 1px dashed #d2d2d2;
+  
+}
+.omgiamreallytired{
+    display: flex;
+
+}
+
+.omgiamreallytired img {
+   padding-right: 15px;
+}
+//header nav bar
+
+.header{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.head-part{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.head-logo{
+    width: 40%;
+}
+.head-logo img{
+    width: 60%;
+}
+
+.social{
+    width:40%;
+    text-align: right;
+    margin-top: 15px;
+
+}
+
+i{
+    padding: 5px;
+}
+
+//footer 
+footer{
+    width: 100%;
+        background-color: #222222;
+        color: white;
+}
+
+.foot-flex{
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.contact_foot, .logo_foot, .hours_foot{
+    width: 33.3%;
+
+}
+
+.logo_foot{
+    text-align: center;
+}
+
+.hours_foot{
+    padding-left: 100px;
+}
+
+
+.logo_foot img{
+    width: 60%;
+    padding-top: 100px;
+
+}
+//contact page content
+
+.contact-heading{
+   font-family: 'overlock';
+   color: grey;
+   font-size: 1.8rem;
+}
+
+.contact-para{
+    font-family: 'overlock';
+    font-size: 1.1rem;
+    
+}
+
+.archive-product-heading{
+    font-family: 'overlock';
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.decorative{
+    margin-top: 7   0px;
+}
+
+.archive-product-motto{
+    font-family: 'overlock';
+    font-size: 1rem;
+    text-align: center;
+}

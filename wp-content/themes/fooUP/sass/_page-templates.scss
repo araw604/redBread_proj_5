@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+.hero{
+	background-image: url('../../Images/hero-bread.jpg');
+	height: 550px;
+	width: 1024px;
+	margin: 0 auto;
+}
+.breadHero {
+	font-family: 'Overlock';
+	
+	font-size: 6rem;
+	color: #fff;
+	margin: auto;
+}
+
+
+.heroText{
+	font-family: 'Overlock';
+	
+	font-size: 80px;
+	color: #fff;
+	margin: auto;
+
+}
+
+.logoPic{
+	width: 300px;
+}
